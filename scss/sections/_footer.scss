@@ -1,0 +1,179 @@
+#touch{
+    background: #fff;
+    padding: 96px;
+
+    .end{
+
+
+        .foot{
+            display: flex;
+            justify-content: center;
+
+            button{
+                padding: 4px 20px;
+                border-radius: 12px;
+                border: none;
+                margin-bottom: 20px;
+                background: var(--sectionbtn-color3);
+
+                a{
+                    color: var(--light-color8);
+                    font-size: 14px;
+                }
+            }
+        }
+        p{  
+            text-align: center;
+            color: var(--light-color8);
+            font-size: 20px;
+            line-height: 28px;
+            font-weight: 400; 
+            margin-bottom: 48px;
+        }
+
+        .endnum{
+            margin-bottom: 48px;
+            padding: 0 395px;
+            gap: 16px;
+        
+        }
+            .email{
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+
+                h2{
+                    font-size: 36px;
+                    line-height: 40px;
+                    font-weight: 600;
+                    color: var(--dark-color2);
+                }
+                img{
+                    width: 32px;
+                    height: 32px;
+                    border: var(--light-color8);
+                }
+            }
+            .num{
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                margin-left: 35px;
+                align-items: center;
+                gap: 20px;
+
+                h2{
+                    font-size: 36px;
+                    line-height: 40px;
+                    font-weight: 600;
+                    color: var(--dark-color2);
+                }
+               
+                
+            }
+            .allwork{
+                display: flex;
+                justify-content: center;
+                .works{
+                    text-align: center;
+                    gap: 8px;
+                    height: 36px;
+                    
+                    justify-content: space-between;
+
+                    a{
+                        
+                        img{
+                            margin-top: 8px;
+                        }
+                    }
+                }
+        }
+
+    }
+
+   
+}
+.withcenter{
+    gap: 8px;
+    padding: 24px ;
+    text-align: center;
+    align-items: center;
+    background: var(--light-color1);
+
+    img{
+        margin-right: 8px;
+    }
+}
+@media only screen and (max-width:375px){
+    #touch{
+        padding: 64px 16px;
+
+        .end{
+
+            .endnum{
+                padding: 0 28px;
+            }
+        }
+    }
+}
+@media (prefers-color-scheme: dark){
+    #touch{
+        background: var(--light-color11);
+
+        .end{
+
+            .foot{
+
+                button{
+                    &:hover{
+                        background: var(--light-color6);
+
+                        a{
+                            color: black;
+                        }
+                    }
+                }
+            }
+            p{
+                color: #fff;
+            }
+            .endnum{
+                color: #fff;
+                .email{
+                    h2{
+                       color: #fff; 
+                    }
+                }
+                .num{
+                    h2{
+                        color: #fff;
+                    }
+                }
+                
+            }
+            .allwork{
+
+                .works{
+
+                    h4{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media (prefers-color-scheme: dark){
+    .zero{
+        background: #111827;
+
+        .withcenter{
+            background: #111827;
+        }
+    }
+}
+    

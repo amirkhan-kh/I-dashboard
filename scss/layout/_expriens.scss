@@ -1,0 +1,340 @@
+#experience{
+    background: var(--light-color1);
+    padding: 96px;
+
+    .exbag{
+        padding: 0 192px;
+
+        .btnexp{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 16px;
+            button{
+                width: 115px;
+                height: 28px;
+                border-radius: 12px;
+                border: none;
+                background: var(--sectionbtn-color3);
+
+                &:hover{
+                    background: var(-light-color5);
+                }
+
+                a{
+                    color: var(--light-color8);
+                    font-size: 14px;
+                }
+            }
+
+        }
+        .titleexp{
+            text-align: center;
+
+            h3{
+                font-size: 20px;
+                line-height: 28px;
+                color: var(--light-color8);
+            }
+        }
+
+        .kard{
+            margin-top: 48px;
+
+            .compcard{
+                width: 896px;
+                height: 288px;
+                padding: 32px;
+                display: flex;
+                justify-content: space-between;
+                background: #fff;
+                margin-bottom: 48px;
+                box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+                img{
+                    width: 105px;
+                    height: 30px;
+                }
+
+                .head{
+                    width: 384px;
+                    height: 224px;
+                    margin-left: 135px;
+                    h2{
+                        font-size: 20px;
+                        line-height: 28px;
+                        color: var(--dark-color2);
+                        margin-bottom: 16px;
+                    }
+                    ul{
+                        padding: 0 20px;
+                        height: 156px;
+
+                        
+                       li{
+                            
+
+                        a{
+                            
+                            font-size: 16px;
+                            line-height: 38px;
+                            color: var(--light-color8);
+                        }
+                       }
+
+                    }
+                }
+                .data{
+                    p{
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: var(--light-color9);
+                    }
+                }
+            }
+            .compcardd{
+                width: 896px;
+                height: 264px;
+                background: #fff;
+                box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+                padding: 32px;
+                display: flex;
+                margin-bottom: 48px;
+                justify-content: space-between;
+
+                img{
+                    width: 120px;
+                    height: 25px;
+                }
+                .top{
+                    width: 384px;
+                    height: 224px;
+                    margin-left: 135px;
+
+                    h2{
+                        font-size: 20px;
+                        line-height: 28px;
+                        color: var(--dark-color2);
+                        margin-bottom: 16px;
+
+                    }
+                    ul{
+                        padding: 0 20px;
+                        height: 156px;
+
+                        li{
+
+                            a{
+                                font-size: 16px;
+                            line-height: 28px;
+                            color: var(--light-color8);
+                            }
+
+                        }
+                    }
+
+                    
+                    
+                }
+
+            }
+
+            .compcarddd{
+                width: 896px;
+                height: 180px;
+                background: #fff;
+                box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+                padding: 32px;
+                display: flex;
+                justify-content: space-between;
+
+                img{
+                    width: 140px;
+                    height: 42px;
+                }
+
+                .three{
+                    margin-left: 48px;
+
+                    h2{
+                        font-size: 20px;
+                        line-height: 28px;
+                        color: var(--dark-color2);
+                        margin-bottom: 16px;
+                    }
+
+                    ul{
+                        padding: 0 20px;
+                        height: 156px;
+
+                        li{
+
+                            a{
+                                font-size: 16px;
+                            line-height: 28px;
+                            color: var(--light-color8);
+                            }
+
+                        }
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+@media only screen and (max-width:375px){
+    #experience{
+        padding: 64px 12px;
+
+        .exbag{
+            padding: 0;
+
+            .kard{
+
+                .compcard{
+                    width: 323px;
+                    height: 377px;
+                    padding: 20px;
+                    flex-direction: column;
+
+                    .head{
+                        margin-left: 0;
+
+                        h2{
+                            font-size: 18px;
+                        }
+                        ul{
+                            a{
+                                font-size: 14px;
+                            }
+                        }
+
+
+                    }
+                }
+                .compcardd{
+                    width: 323px;
+                    height: 373px;
+                    flex-direction: column;
+                    padding: 10px;
+
+                    .top{
+                        margin-left: 0;
+
+                        h2{
+                            font-style: 12px;
+                        }
+                    }
+                }
+                .compcarddd{
+                    padding: 10px;
+                    flex-direction: column;
+                    width: 323px;
+                    height: 288px;
+                    .three{
+
+                        ul{
+                            margin-left: -10px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+@media (prefers-color-scheme: dark){
+    #experience{
+        background: var(--dark-color2);
+
+        .exbag{
+
+            .btnexp{
+
+                button{
+                    &:hover{
+                        background: var(--light-color6);
+
+                        a{
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .titleexp{
+
+                h3{
+                    color: #fff;
+                }
+            }
+            .kard{
+
+                .compcard{
+                    background-color: var(--dark-color3);
+
+                    .head{
+
+                        h2{
+                            color: #fff;
+                        }
+                        ul{
+                            color: #fff;
+                        }
+                        li{
+                            line-height: 30px;
+                        }
+                       
+                    }
+                    .data{
+                        p{
+                            color: #fff;
+                        }
+                    }
+                }
+                .compcardd{
+                    background-color: var(--dark-color3);
+
+                    .top{
+
+                        h2{
+                            color: #fff;
+                        }
+                        ul{
+                            color: #fff;
+                        }
+                        li{
+                            line-height: 30px;
+                        }
+                    }
+                    .year{
+                        p{
+                            color: #fff;
+                        }
+                    }
+
+                }
+                .compcarddd{
+                    background-color: var(--dark-color3);
+
+                    .three{
+                        h2{
+                            color: #fff;
+                        }
+                        ul{
+                            color: #fff;
+                        }
+                        li{
+                            line-height: 30px;
+                        }
+                    }
+                    .mon{
+                        p{
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

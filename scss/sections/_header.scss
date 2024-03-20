@@ -1,0 +1,110 @@
+header {
+    width: 100%;
+    padding:16px;
+    margin-top: 0;
+    z-index: 333;
+
+    nav {
+        display: flex;
+
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            gap: 24px;
+            color: #4B5563;
+            align-items: center;
+            font-size: 16px;
+            list-style-type: none;
+
+            li{
+
+                a{
+                   color: var( --light-color8);
+                }
+            }
+
+        }
+
+        .mode {
+            display: flex;
+            gap: 16px;
+
+            button {
+                width: 136px;
+                height: 36px;
+                background: #111827;
+                padding: 6px 16px;
+                border-radius: 12px;
+                color: #fff;
+                font-size: 16px;
+                line-height: 24px;
+
+                &:hover{
+                    background: var(--light-color9);
+                }
+                a{
+                    color: var(  --light-color2);
+                }
+            }
+        }
+        .menu{
+            display: none;
+            
+        }
+    }
+
+}
+
+@media only screen and (max-width:375px){
+    header{
+
+        nav{
+            display: flex;
+            justify-content: space-between;
+            h1{
+                font-size: 20px;
+                width: 106px;
+                height: 36px;
+            }
+            ul{
+                display: none;
+            }
+            .menu{
+                
+                display: flex;
+            }
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark){
+    header{
+        background:var( --light-color11);
+        padding: 0;
+        nav{
+
+            h1{
+                color: #fff;
+
+            }
+            ul{
+                a{
+                    color: #fff;
+                }
+            }
+            .mode{
+                img{
+                    display: none;
+                }
+                .dark{
+                    display: block;
+                }
+
+                button{
+                    border: none;
+                }
+            }
+        }
+    }
+}

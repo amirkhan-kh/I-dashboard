@@ -1,0 +1,132 @@
+#skills{
+    padding: 96px 80px;
+
+    .wrap{
+
+        .title{
+            display: flex;
+            justify-content: center;
+
+            h3{
+                color: var(--light-color8);
+                font-size: 20px;
+                line-height: 28px;
+            }
+
+        }
+        .btnsection{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 16px;
+            button{
+                width: 75px;
+                height: 28px;
+                background: var(--sectionbtn-color3);
+                border-radius: 12px;
+                border: none;
+                font-size: 14px;
+                color: #4B5563;
+
+                a{
+                    color: var(--light-color8);
+                }
+            }
+        }
+
+        .grid{
+            margin-top: 48px;
+            display: grid;
+            gap: 88px;
+            grid-template-columns: repeat(8,88px);
+            .card{
+                width: 88px;
+                height: 100px;
+                
+                img{
+                    margin: 0 10px;
+                }
+
+                p{
+                    text-align: center;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: var(--light-color8);
+                }
+            }
+            .cardd{
+                
+                width: 88px;
+                height: 100px;
+
+
+                p{
+                    line-height: 28px;
+                    font-size: 18px;
+                    color: var(--light-color8);
+                    text-align: center;
+                }
+                img{
+                    padding: 0 27px;
+                    
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width:375px){
+    #skills{
+        padding: 64px 16px;
+
+        .wrap{
+
+           .title{
+            text-align: center;
+           
+           }
+           .grid{
+
+            column-gap: 22px;
+            row-gap: 50px;
+            grid-template-columns: repeat(3,80px);
+           }
+        }
+    }
+
+}
+@media (prefers-color-scheme: dark){
+    #skills{
+        background: var(--light-color11);
+
+        .wrap{
+
+            .btnsection{
+                button{
+                    &:hover{
+                        background: var(--light-color6);
+
+                        a{
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .title{
+
+                h3{
+                    color: #fff;
+                }
+            }
+            .grid{
+            
+
+                .card{
+                    p{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
